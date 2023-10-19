@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using _Shambala_entity_17_10_2023_Game;
+using ModelFirstExample.Model;
 
 #nullable disable
 
 namespace ModelFirstExample.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231018165111_Init")]
-    partial class Init
+    [Migration("20231019070145_Menu")]
+    partial class Menu
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace ModelFirstExample.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ModelFirstExample.Model.Menuitem", b =>
+            modelBuilder.Entity("ModelFirstExample.Model.MenuItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

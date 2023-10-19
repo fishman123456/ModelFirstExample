@@ -8,11 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _Shambala_entity_17_10_2023_Game
+namespace ModelFirstExample.Model
 {
     internal class ApplicationDbContext : DbContext
     {
-        public DbSet<Menuitem> menuitems { get; set; }
+        public DbSet<MenuItem> menuitems { get; set; }
 
         protected override  void OnConfiguring (DbContextOptionsBuilder optionsBuilder)
         {

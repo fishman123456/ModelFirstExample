@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using _Shambala_entity_17_10_2023_Game;
+using ModelFirstExample.Model;
 
 #nullable disable
 
@@ -21,7 +21,7 @@ namespace ModelFirstExample.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ModelFirstExample.Model.Menuitem", b =>
+            modelBuilder.Entity("ModelFirstExample.Model.MenuItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

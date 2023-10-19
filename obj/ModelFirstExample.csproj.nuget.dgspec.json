@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fishman_1\\Documents\\GitHub\\ModelFirstExample\\ModelFirstExample.csproj": {}
+    "C:\\Users\\Fishman.DB.CORP\\Documents\\GitHub\\ModelFirstExample\\ModelFirstExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fishman_1\\Documents\\GitHub\\ModelFirstExample\\ModelFirstExample.csproj": {
+    "C:\\Users\\Fishman.DB.CORP\\Documents\\GitHub\\ModelFirstExample\\ModelFirstExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fishman_1\\Documents\\GitHub\\ModelFirstExample\\ModelFirstExample.csproj",
+        "projectUniqueName": "C:\\Users\\Fishman.DB.CORP\\Documents\\GitHub\\ModelFirstExample\\ModelFirstExample.csproj",
         "projectName": "ModelFirstExample",
-        "projectPath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\ModelFirstExample\\ModelFirstExample.csproj",
-        "packagesPath": "C:\\Users\\Fishman_1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\ModelFirstExample\\obj\\",
+        "projectPath": "C:\\Users\\Fishman.DB.CORP\\Documents\\GitHub\\ModelFirstExample\\ModelFirstExample.csproj",
+        "packagesPath": "C:\\Users\\Fishman.DB.CORP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fishman.DB.CORP\\Documents\\GitHub\\ModelFirstExample\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Fishman_1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fishman.DB.CORP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

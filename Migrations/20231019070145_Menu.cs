@@ -5,7 +5,7 @@
 namespace ModelFirstExample.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class Menu : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
