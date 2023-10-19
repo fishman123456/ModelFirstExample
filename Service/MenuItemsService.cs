@@ -8,17 +8,15 @@ using System.Threading.Tasks;
 
 namespace ModelFirstExample.Model
 {
-    public class MenuItemsService
-    {
         // Класс, реализующий операции с таблицей MenuItem
-        internal class MenuItemService
+        public class MenuItemService
         {
             // 1. получить все записи
             public List<MenuItem> SelectAll()
             {
                 ApplicationDbContext dbContext = new ApplicationDbContext();
                 return dbContext.menuitems.ToList();
-                throw new NotImplementedException();
+                
             }
 
             // 2. добавить новую запись
@@ -62,4 +60,4 @@ namespace ModelFirstExample.Model
             }
         }
     }
-}
+

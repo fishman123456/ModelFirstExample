@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ModelFirstExample.Model
 {
-    internal class MenuItem
+    public class MenuItem
     {
         public int Id { get; set; }
         public string Title { get; set; }
@@ -19,9 +19,8 @@ namespace ModelFirstExample.Model
         public int Carbohydrates { get; set;}
         public int Weight { get; set; }
         public MenuItem() { }
-        public MenuItem(int id, string title, int calories, int proteins, int fats, int carbohydrates, int weight)
+        public MenuItem( string title, int calories, int proteins, int fats, int carbohydrates, int weight)
         {
-            Id = id;
             Title = title;
             Calories = calories;
             Proteins = proteins;
