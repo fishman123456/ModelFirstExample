@@ -1,40 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="ModelFirstExample.Migrations.Init">
-    <Position X="9.75" Y="2" Width="1.5" />
+  <Class Name="ModelFirstExample.Migrations.Menu">
+    <Position X="11.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
-      <FileName>Migrations\20231018165111_Init.cs</FileName>
+      <FileName>Migrations\20231019070145_Menu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ModelFirstExample.Migrations.ApplicationDbContextModelSnapshot">
-    <Position X="7.75" Y="3.75" Width="1.5" />
+    <Position X="10" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>Migrations\ApplicationDbContextModelSnapshot.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ModelFirstExample.Model.MenuItemsService">
-    <Position X="9.75" Y="3.75" Width="1.5" />
-    <Compartments>
-      <Compartment Name="Nested Types" Collapsed="false" />
-    </Compartments>
-    <NestedTypes>
-      <Class Name="ModelFirstExample.Model.MenuItemsService.MenuItemService">
-        <TypeIdentifier>
-          <NewMemberFileName>Service\MenuItemsService.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-    </NestedTypes>
+  <Class Name="ModelFirstExample.Model.ApplicationDbContext">
+    <Position X="8.25" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Model\ApplicationDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ModelFirstExample.Model.MenuItem">
+    <Position X="1.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAEAEAAAAABAAACAAABAAAAAAAAAEAAA=</HashCode>
+      <FileName>Model\MenuItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ModelFirstExample.Model.MenuItemService">
+    <Position X="4" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAACAAAAABAAAAAAAAACAAAAAAAAAAAAACAAA=</HashCode>
       <FileName>Service\MenuItemsService.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ModelFirstExample.Program">
-    <Position X="7.75" Y="2" Width="1.5" />
+    <Position X="5.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>

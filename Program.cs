@@ -1,4 +1,5 @@
 ﻿using ModelFirstExample.Model;
+
 using System.Reflection;
 namespace ModelFirstExample
 {
@@ -14,34 +15,52 @@ namespace ModelFirstExample
     // для обновления на сервере ввести в Консоли диспечеров пакетов Update-Database
     internal class Program
     {
-        static void Main(string[] args)
+        public static void TestSelectALL()
         {
             Console.WriteLine("Hello, Doy!");
             MenuItemService menuItemsService = new MenuItemService();
-           var grush = menuItemsService.Insert(new MenuItem{
-               Title = "груша", 
-               Calories = 157, 
-               Proteins = 50, 
-               Carbohydrates = 879, 
-               Weight = 8, 
-               Fats = 11});
+            menuItemsService.SelectAll();
+        }
+        // метод тест добавить записи
+        public void TestAdd()
+        {
+            Console.WriteLine("Hello, Doy!");
+            MenuItemService menuItemsService = new MenuItemService();
+            var grush = menuItemsService.Insert(new MenuItem
+            {
+                Title = "груша",
+                Calories = 157,
+                Proteins = 50,
+                Carbohydrates = 879,
+                Weight = 8,
+                Fats = 11
+            });
             Console.WriteLine(grush);
-           var yablok = menuItemsService.Insert(new MenuItem { 
-               Title = "яблоко",
-               Calories = 154, 
-               Proteins = 40, 
-               Carbohydrates = 579, 
-               Weight = 9, 
-               Fats = 3 });
+            var yablok = menuItemsService.Insert(new MenuItem
+            {
+                Title = "яблоко",
+                Calories = 154,
+                Proteins = 40,
+                Carbohydrates = 579,
+                Weight = 9,
+                Fats = 3
+            });
             Console.WriteLine(yablok);
-           var vatermelon = menuItemsService.Insert(new MenuItem { 
-               Title = "арбуз", 
-               Calories = 149, 
-               Proteins = 60, 
-               Carbohydrates = 673, 
-               Weight = 12, 
-               Fats = 25 });
+            var vatermelon = menuItemsService.Insert(new MenuItem
+            {
+                Title = "арбуз",
+                Calories = 149,
+                Proteins = 60,
+                Carbohydrates = 673,
+                Weight = 12,
+                Fats = 25
+            });
             Console.WriteLine(vatermelon);
-        }   
+        }
+        public static void Main(string[] args)
+        {
+            MenuItemService menuItemsService = new MenuItemService();
+           TestSelectALL();
+        }
     }
 }
