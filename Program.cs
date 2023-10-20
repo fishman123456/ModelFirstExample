@@ -22,7 +22,7 @@ namespace ModelFirstExample
             menuItemsService.SelectAll();
         }
         // метод тест добавить записи
-        public void TestAdd()
+        public static void TestAdd()
         {
             Console.WriteLine("Hello, Doy!");
             MenuItemService menuItemsService = new MenuItemService();
@@ -57,10 +57,34 @@ namespace ModelFirstExample
             });
             Console.WriteLine(vatermelon);
         }
+        public static void TestSeach()
+        {
+            MenuItemService menuItemsService = new MenuItemService();
+            var menu = menuItemsService.SelectByTitlePattern("яблоко");
+            Console.WriteLine("Hello, Doy!");
+            foreach (MenuItem item in menu)
+            {
+                Console.WriteLine(item);
+            }
+        }
+        public static void TestAvarege()
+        {
+            MenuItemService menuItemsService = new MenuItemService();
+            Console.WriteLine("Hello, Doy!");
+            Console.WriteLine($"Средняя калорийность: " + menuItemsService.SelectAverageEnergy());
+        }
+        public static void TestOrderByWeight()
+        {
+            MenuItemService menuItemsService = new MenuItemService();
+            menuItemsService.SelectAllOrderByWeight();
+        }
         public static void Main(string[] args)
         {
             MenuItemService menuItemsService = new MenuItemService();
-           TestSelectALL();
+            TestSelectALL();
+            TestSeach();
+            TestAvarege();
+            TestOrderByWeight();
         }
     }
 }

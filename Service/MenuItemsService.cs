@@ -64,7 +64,10 @@ namespace ModelFirstExample.Model
         {
             using (ApplicationDbContext dbContext = new ApplicationDbContext())
             {
-                throw new NotImplementedException();
+                string pattern = titlePattern.ToLower();
+               return dbContext.menuitems
+                    .Where(m=>m.Title.ToLower().Contains(pattern))
+                    .ToList();
             }
         }
 
@@ -73,7 +76,11 @@ namespace ModelFirstExample.Model
         {
             using (ApplicationDbContext dbContext = new ApplicationDbContext())
             {
-                throw new NotImplementedException();
+                return dbContext.menuitems
+                    .Where(u => ((short)u.Calories)>0)
+                        .Average(p => p.Calories);
+               
+                   
             }
         }
 
@@ -82,7 +89,12 @@ namespace ModelFirstExample.Model
         {
             using (ApplicationDbContext dbContext = new ApplicationDbContext())
             {
-                throw new NotImplementedException();
+                Console.WriteLine("Сортировка по весу");
+                foreach (MenuItem item in dbContext.menuitems.OrderBy(m => m.Weight).ToList())
+                {
+                    Console.WriteLine(item);
+                }
+                return dbContext.menuitems.OrderBy(m => m.Weight).ToList();          
             }
         }
     }
