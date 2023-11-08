@@ -24,7 +24,6 @@ namespace ModelFirstExample.Model
                 return dbContext.menuitems.ToList();
             }
         }
-
         // 2. добавить новую запись
         public MenuItem Insert(MenuItem menuItem)
         {
@@ -49,7 +48,6 @@ namespace ModelFirstExample.Model
                 return menuItem!=null;
             }
         }
-
         // 4. получить запись по id
         public MenuItem? SelectById(int id)
         {
@@ -58,7 +56,6 @@ namespace ModelFirstExample.Model
                 return dbContext.menuitems.FirstOrDefault(menuitem => menuitem.Id == id);
             }
         }
-
         // 5. получить все записи, title которых включает в себя переданную строчку (без учета регистра)
         public List<MenuItem> SelectByTitlePattern(string titlePattern)
         {
@@ -70,7 +67,6 @@ namespace ModelFirstExample.Model
                     .ToList();
             }
         }
-
         // 6. посчитать среднюю калойриность всего меню
         public double SelectAverageEnergy()
         {
@@ -83,7 +79,6 @@ namespace ModelFirstExample.Model
                    
             }
         }
-
         // 7. получить все записи в отсортированном порядке по возрастанию веса
         public List<MenuItem> SelectAllOrderByWeight()
         {
